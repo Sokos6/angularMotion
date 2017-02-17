@@ -1,10 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-import { AppComponent } from './app.component';
+import { Routes, RouterModule } from '@angular/router';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { Imwng2RoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +11,8 @@ import { PostListComponent } from './posts/post-list/post-list.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Imwng2RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
